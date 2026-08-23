@@ -29,7 +29,6 @@ def adicionar_item_tarefa(tarefa):
     label_tarefa = tk.Label(frame_tarefa, text=tarefa, font=("Garamond", 16), bg="white", width=25, height=2, anchor="w")
     label_tarefa.pack(side=tk.LEFT, fill=tk.X, padx=10, pady=5)
 
-    # Botões com emojis
     botao_editar = tk.Button(frame_tarefa, text="✏️", command=lambda f=frame_tarefa, l=label_tarefa: preparar_edicao(f, l), 
                             bg="white", relief=tk.FLAT, font=("Arial", 14), width=2)
     botao_editar.pack(side=tk.RIGHT, padx=5)
@@ -82,10 +81,8 @@ def ao_sair_foco(event):
         entrada_tarefa.insert(0, "Escreva sua tarefa aqui")
         entrada_tarefa.configure(fg="grey")
 
-# Criar uma fonte para o cabeçalho
 fonte_cabecalho = font.Font(family="Garamond", size=24, weight="bold")
 
-# Criar um rótulo de cabeçalho
 rotulo_cabecalho = tk.Label(janela, text="Meu App de Tarefas", font=fonte_cabecalho, bg="#F0F0F0", fg="#333")
 rotulo_cabecalho.pack(pady=20)
 
