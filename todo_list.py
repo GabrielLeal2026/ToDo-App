@@ -29,11 +29,11 @@ def adicionar_item_tarefa(tarefa):
     label_tarefa = tk.Label(frame_tarefa, text=tarefa, font=("Garamond", 16), bg="white", width=25, height=2, anchor="w")
     label_tarefa.pack(side=tk.LEFT, fill=tk.X, padx=10, pady=5)
 
-    botao_editar = tk.Button(frame_tarefa, text="✏️", command=lambda f=frame_tarefa, l=label_tarefa: preparar_edicao(f, l), 
+    botao_editar = tk.Button(frame_tarefa, text="✎", command=lambda f=frame_tarefa, l=label_tarefa: preparar_edicao(f, l), 
                             bg="white", relief=tk.FLAT, font=("Arial", 14), width=2)
     botao_editar.pack(side=tk.RIGHT, padx=5)
 
-    botao_deletar = tk.Button(frame_tarefa, text="🗑️", command=lambda f=frame_tarefa: deletar_tarefa(f), 
+    botao_deletar = tk.Button(frame_tarefa, text="✕", command=lambda f=frame_tarefa: deletar_tarefa(f), 
                              bg="white", relief=tk.FLAT, font=("Arial", 14), width=2)
     botao_deletar.pack(side=tk.RIGHT, padx=5)
 
