@@ -4,6 +4,10 @@ A simple desktop task management application built with Python and Tkinter.
 
 This project was created to practice Python fundamentals, graphical user interfaces, event handling, and basic task management features.
 
+## Preview
+
+![Python To-Do List Preview](screenshot.png)
+
 ## Features
 
 - Add new tasks
